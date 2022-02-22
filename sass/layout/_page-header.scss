@@ -1,0 +1,123 @@
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+
+    background-color: #FFFFFF;
+
+    @include font(14px, 500, 1.14, 0.02em);
+
+    border-bottom: 1px solid #ECECEC;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__link { 
+    font-family: "Roboto", sans-serif;
+
+    @include font(14px, 500, 1.14, 0.02em);
+
+    color: $firstTitleColor;
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__list .nav__link:focus,
+.nav__list .nav__link:hover {
+    color: $accentColor;
+}
+
+.nav__list .nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-style: normal;
+
+    @include font(14px, 500, 1.14, 0.02em);
+
+    color: $firstTitleColor;
+    text-decoration: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__list .nav__link--current {
+    color: $accentColor;
+    position: relative;
+}
+
+.nav__item + .nav__item {
+    margin-left: 50px;
+}
+
+.nav__link--current {
+    color: $accentColor;
+    position: relative;
+
+&::after {
+    content: "";
+    position: absolute;
+   
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 77px;
+
+    background: $accentColor;
+    border-radius: 2px; 
+}
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    text-decoration: none;
+}
+
+.contacts__link .contacts__link {
+
+    @include font(14px, 500, 1.14, 0.02em);
+
+    color: $mainTextColor;
+    background-color: $backgroundLightColor;
+}
+
+.contacts__item + .contacts__item {
+    margin-left: 50px;
+}
+
+.contacts__item {
+    color: $mainTextColor;
+}
+
+.contacts__icon {
+    justify-content: center;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    color: $mainTextColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus,
+&.current {
+    color: $accentColor;
+}
+}
+

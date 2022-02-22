@@ -1,0 +1,100 @@
+.team {
+    background: $teamBackgroundColor;
+}
+
+.team-main__title { 
+    @include font(36px, 700, 1.16, 0.03em);
+
+    color: $firstTitleColor;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team__list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.team__item {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* .team-item + .team-item {
+    margin-left: 30px;
+} */
+
+.team__img {
+    display: block;
+    max-width: 100%;
+}
+
+.team-item__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.team__title {
+    @include font(16px, 500, 1.18, 0.03em);
+
+    color: $firstTitleColor;
+    margin-bottom: 10px;
+}
+.team__text {
+    @include font(16px, 400, 1.18, 0.03em);
+
+    color: $mainTextColor;
+    margin-bottom: 16px;
+}
+
+.team-socials__list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-socials__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.team-socials__link {
+    width: 44px;
+    height: 44px;
+    background-color: $backgroundLightColor;
+    color: #AFB1B8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    background-color: $accentColor;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.team-socials__link:hover .team-socials__icon {
+    fill: #ffffff;
+}
+
+.team-socials__link:focus .team-socials__icon {
+    fill: #ffffff;
+}
+
+.team-socials__icon {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: currentColor;
+}
+

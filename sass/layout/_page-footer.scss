@@ -1,0 +1,179 @@
+.section__footer {
+    background-color: $backgroundDarkColor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.footer__container {
+    align-items: baseline;
+    display: flex;
+}
+
+.address-contacts__item:not(:first-child) {
+    margin-top: 9px;
+}
+
+
+.footer__contacts {
+    flex-grow: 1;
+}
+
+.address-contacts__link {
+    font-family: "Roboto", sans-serif;
+
+    @include font(14px, 400, 1.71, 0.03em);
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+    color: $accentColor;
+}
+}
+
+.white {
+    color: $secondTitleColor;
+}
+
+.address {
+    font-style: normal;
+    display: flex;
+}
+
+.footer__socials {
+    margin-left: 70px;
+}
+
+.footer__text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+
+    @include font(14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    color: $secondTitleColor;
+    margin-bottom: 20px;
+}
+
+.footer-socials__list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socials__link {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: $accentColor;
+}
+}
+
+.footer-socials__link:hover .footer-socials__icon {
+    fill: $iconColorLight;
+}
+
+.footer-socials__icon {
+    fill: $iconColorLight;
+}
+
+.footer-socials__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.footer__subscription {
+    margin-left: 93px;
+}
+
+.footer-subscription__text {
+    font-style: normal;
+
+    @include font(14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    color: $secondTitleColor;
+    margin-bottom: 20px;
+}
+
+.subscription__form {
+    display: flex;
+    position: relative;
+}
+
+.online__input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+    margin-right: 12px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:placeholder-shown) {
+    color: $secondTitleColor;
+}
+
+    &:focus,
+    &:hover {
+    border-color: $accentColor;
+}
+}
+
+.subscription__btn {
+    position: relative;
+    font-family: inherit;
+    font-style: normal;
+
+    @include font(16px, 700, 1.87, 0.06em);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+    color: $buttonColorLight;
+    background: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+
+    width: 200px;
+    height: 50px;
+    padding-left: 29px;
+    padding-right: 62px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+    background: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+}
+
+.icon-subscription__btn {
+    position: absolute;
+
+    top: 50%;
+    right: 28px;
+
+    transform: translateY(-50%);
+
+    fill: $buttonColorLight;
+}
