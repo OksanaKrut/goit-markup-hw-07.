@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container header__container">
     
-        <a class="logo logo--header" href="" lang="en">Web<span class="logo--dark-theme">Studio</span></a>
+        <a class="logo logo__header" href="" lang="en">Web<span class="logo__dark-theme">Studio</span></a>
     
         <nav class="nav">
             <ul class="nav__list list">
@@ -59,7 +59,7 @@
             
         <h1 class="visually__hidden">Portfolio</h1>
 
-        <ul class="filters__list list">
+        <ul class="filters">
 
             <li class="filters__item">
                 <button type="button" class="filters__btn">Все</button></li>
@@ -74,10 +74,10 @@
 
         </ul>
 
-        <ul class="projects__list list">
+        <ul class="projects">
             <li class="projects__item">
 
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/laptop1.jpg" alt="открытый ноутбук" 
                 width="370" height="294" class="projects__img">
@@ -92,7 +92,7 @@
             </li>
             <li class="projects__item">
                 
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/players2.jpg" alt="игра двух баскетболистов" 
                 width="370" height="294" class="projects__img">
@@ -107,7 +107,7 @@
             </li>
             <li class="projects__item">
                
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/seafood3.jpg" alt="логотип ресторана морепродуктов" 
                 width="370" height="294" class="projects__img">
@@ -122,7 +122,7 @@
             </li>
             <li class="projects__item">
                 
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/prime4.jpg" alt="большые блютуз наушники" 
                 width="370" height="294" class="projects__img">
@@ -137,7 +137,7 @@
             </li>
             <li class="projects__item">
                 
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/boxes5.jpg" alt="две коробки" 
                 width="370" height="294" class="projects__img">
@@ -152,7 +152,7 @@
             </li>
             <li class="projects__item">
                 
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/computer6.jpg" alt="монитор компьютера" 
                 width="370" height="294" class="projects__img">
@@ -167,7 +167,7 @@
             </li>
             <li class="projects__item">
                
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/book7.jpg" alt="открытая книга" 
                 width="370" height="294" class="projects__img">
@@ -182,7 +182,7 @@
             </li>
             <li class="projects__item">
                 
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/lab8.jpg" alt="ярлык тег макет" 
                 width="370" height="294" class="projects__img">
@@ -197,7 +197,7 @@
             </li>
             <li class="projects__item">
                
-            <a href="" class="projects-item__link">
+            <a href="" class="projects__link">
                 <div class="projects__thumb">
                 <img src="./images/growbusiness9.jpg" alt="руки человека печатают на ноутбуке" 
                 width="370" height="294" class="projects__img">
@@ -215,55 +215,57 @@
         </section>
     </main>
 
-<footer class="section-footer">
-    <div class="container footer-container">
-        <div class="footer-contacts">
-            <div class="logo-container">
-                <a class="logo" href="" lang="en">Web<span class="logo--light-theme">Studio</span></a>
+<footer class="footer">
+    <div class="container footer__container">
+
+        <div class="footer-contacts__container">
+            <div class="logo__container">
+                <a class="logo" href="" lang="en">Web<span class="logo__light-theme">Studio</span></a>
             </div>
             <address class="address">
-                <ul class="footer-contacts list">
-                    <li class="footer-contacts-item">
-                        <a class="footer-contacts-link white" href="https://goo.gl/maps/eW5yHYnCtE8TKeL58"
-                            target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
+                <ul class="address-contacts">
+                    <li class="address-contacts__item">
+                        <a class="address-contacts__link address-contacts__link--light"
+                            href="https://goo.gl/maps/eW5yHYnCtE8TKeL58" target="_blank" rel="noreferrer noopener">г.
+                            Киев, пр-т Леси Украинки, 26</a>
                     </li>
-                    <li class="footer-contacts-item">
-                        <a class="footer-contacts-link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="address-contacts__item">
+                        <a class="address-contacts__link" href="mailto:info@example.com">info@example.com</a>
                     </li>
-                    <li class="footer-contacts-item">
-                        <a class="footer-contacts-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="address-contacts__item">
+                        <a class="address-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </address>
         </div>
 
-        <div class="footer-socials">
-            <p class="footer-text white">присоединяйтесь</p>
-            <ul class="footer-socials-list list">
-                <li class="footer-socials-item">
-                    <a href="" class="footer-socials-link">
-                        <svg class="footer-socials-icon" width="20" height="20">
+        <div class="footer-socials__container">
+            <p class="footer__text">присоединяйтесь</p>
+            <ul class="footer-socials__list">
+                <li class="footer-socials__item">
+                    <a href="" class="footer-socials__link">
+                        <svg class="footer-socials__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-instagram-2"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="footer-socials-item">
-                    <a href="" class="footer-socials-link">
-                        <svg class="footer-socials-icon" width="20" height="20">
+                <li class="footer-socials__item">
+                    <a href="" class="footer-socials__link">
+                        <svg class="footer-socials__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-twitter-1"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="footer-socials-item">
-                    <a href="" class="footer-socials-link">
-                        <svg class="footer-socials-icon" width="20" height="20">
+                <li class="footer-socials__item">
+                    <a href="" class="footer-socials__link">
+                        <svg class="footer-socials__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-facebook-1"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="footer-socials-item">
-                    <a href="" class="footer-socials-link">
-                        <svg class="footer-socials-icon" width="20" height="20">
+                <li class="footer-socials__item">
+                    <a href="" class="footer-socials__link">
+                        <svg class="footer-socials__icon" width="20" height="20">
                             <use href="./images/icons.svg#icon-linkedin-1"></use>
                         </svg>
                     </a>
@@ -271,23 +273,24 @@
             </ul>
         </div>
 
-            <div class="footer-subscription">
-                <p class="footer-sub-text">
-                    Подпишитесь на рассылку
-                </p>
-            
-                <form class="sub-form">
-            
-                    <input type="email" name="mail" class="online-input" placeholder="E-mail" />
-            
-                    <button type="submit" class="sub-btn">Подписаться</button>
-                    <svg class="icon-send-btn" width="24" height="24">
+        <div class="footer-subscription__container">
+            <p class="footer-subscription__text">
+                Подпишитесь на рассылку
+            </p>
+
+            <form class="subscription__form">
+
+                <input type="email" name="mail" class="online__input" placeholder="E-mail" />
+
+                <button type="submit" class="subscription__btn">Подписаться
+                    <svg class="icon-subscription__btn" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
-            
-                </form>
-            
-            </div>
+                    </svg></button>
+
+            </form>
+
+        </div>
+
     </div>
 </footer>
 

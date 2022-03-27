@@ -1,4 +1,4 @@
-.section__footer {
+.footer {
     background-color: $backgroundDarkColor;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -10,13 +10,19 @@
     display: flex;
 }
 
-.address-contacts__item:not(:first-child) {
-    margin-top: 9px;
+// ------------------CONTACTS--------------------------
+
+.footer-contacts__container {
+    flex-grow: 1;
 }
 
+.address {
+    font-style: normal;
+    display: flex;
+}
 
-.footer__contacts {
-    flex-grow: 1;
+.address-contacts__item:not(:first-child) {
+    margin-top: 9px;
 }
 
 .address-contacts__link {
@@ -35,16 +41,13 @@
 }
 }
 
-.white {
+.address-contacts__link--light {
     color: $secondTitleColor;
 }
 
-.address {
-    font-style: normal;
-    display: flex;
-}
+// ------------------SOCIALS--------------------------
 
-.footer__socials {
+.footer-socials__container {
     margin-left: 70px;
 }
 
@@ -92,8 +95,8 @@
 .footer-socials__item:not(:first-child) {
     margin-left: 10px;
 }
-
-.footer__subscription {
+// ------------------SUBSCRIPTION--------------------------
+.footer-subscription__container {
     margin-left: 93px;
 }
 
@@ -137,26 +140,25 @@
 
 .subscription__btn {
     position: relative;
+
     font-family: inherit;
     font-style: normal;
-
     @include font(16px, 700, 1.87, 0.06em);
 
     display: flex;
     align-items: center;
     text-align: center;
 
+    width: 200px;
+    height: 50px;
+    padding-left: 29px;
+    padding-right: 62px;
 
     color: $buttonColorLight;
     background: $accentColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: transparent;
-
-    width: 200px;
-    height: 50px;
-    padding-left: 29px;
-    padding-right: 62px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,

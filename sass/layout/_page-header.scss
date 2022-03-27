@@ -29,11 +29,11 @@
     color: $firstTitleColor;
     display: flex;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.nav__list .nav__link:focus,
-.nav__list .nav__link:hover {
+.nav__list &:focus,
+.nav__list &:hover {
     color: $accentColor;
+}
 }
 
 .nav__list .nav__link {
@@ -85,15 +85,7 @@
     text-decoration: none;
 }
 
-.contacts__link .contacts__link {
-
-    @include font(14px, 500, 1.14, 0.02em);
-
-    color: $mainTextColor;
-    background-color: $backgroundLightColor;
-}
-
-.contacts__item + .contacts__item {
+.contacts__item:not(:first-child) {
     margin-left: 50px;
 }
 
@@ -110,7 +102,10 @@
 .contacts__link {
     display: flex;
     align-items: center;
+    @include font(14px, 500, 1.14, 0.02em);
+
     color: $mainTextColor;
+    background-color: $backgroundLightColor;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

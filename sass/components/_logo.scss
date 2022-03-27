@@ -6,12 +6,12 @@
     color: $logoColor;
 }
 
-.logo--header {
+.logo__header {
     display: flex;
     margin-right: 93px;
 }
 
-.logo--dark-theme {
+.logo__dark-theme {
     color: $logoDarkTheme;
 }
 
@@ -19,6 +19,6 @@
     margin-bottom: 20px;
 }
 
-.logo--light-theme {
+.logo__light-theme {
     color: $logoLightTheme;
 }
